@@ -4,7 +4,7 @@
   <div id="product-images" class="sticky-side-image">
     {% for image in mainProduct.images %}
     <div class="single-product-image" {% render 'image-variant' %}>
-      <img src="{{ image | img_url: 'x1440' }}" />
+      <img src="{{ image | img_url: 'x1440' }}" width="{{ image.width}}" height="{{ image.width}}" loading="lazy" />
     </div>
     {% endfor %}    
   </div>
