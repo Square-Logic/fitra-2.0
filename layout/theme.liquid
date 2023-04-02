@@ -10,7 +10,7 @@
   {{ content_for_header }} <!-- Header hook for plugins -->
   {% render 'css-fonts' %}
   {{ 'application.css' | asset_url | stylesheet_tag }}
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="{{ 'jquery.slim.min.js' | asset_url }}" defer></script>
   <script src="{{ 'application.js' | asset_url }}" async></script>  
 </head>
 <body class="template-{{ template }}">
