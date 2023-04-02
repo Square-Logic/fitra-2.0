@@ -3,7 +3,7 @@
 <div id="page-index">
   <div id="product-images" class="sticky-side-image">
     {% for image in mainProduct.images %}
-    <div class="single-product-image" {% include 'image-variant' %}>
+    <div class="single-product-image" {% render 'image-variant' %}>
       <img src="{{ image | img_url: 'x1440' }}" />
     </div>
     {% endfor %}    
