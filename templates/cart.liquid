@@ -1,7 +1,7 @@
 <div id="page-cart">
 
   <div class="sticky-side-image">
-    <img src="{{ 'Hero-Cart.jpg' | asset_url }}" loading="lazy">
+    <img alt="Hero-Cart" src="{{ 'Hero-Cart.jpg' | asset_url }}" width="100" height="200" loading="lazy">
   </div>  
 
   <div id="cart" class="main-content grid {% if cart.item_count > 0 %}cart-filled{% endif %}">
@@ -40,7 +40,7 @@
                     {{ item.line_price | money }}
                     <a class="remove-line" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
                       <span class="remove-text">{{ 'cart.lines.remove' | t }}</span>
-                      <img class="remove-x" src="{{ 'icon-x.svg' | asset_url }}" loading="lazy"/>
+                      <img class="remove-x" alt="Icon" src="{{ 'icon-x.svg' | asset_url }}" width="100" height="200" loading="lazy"/>
                     </a>
                   </td>
                 </tr>
