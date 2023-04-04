@@ -40,7 +40,7 @@
                     {{ item.line_price | money }}
                     <a class="remove-line" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
                       <span class="remove-text">{{ 'cart.lines.remove' | t }}</span>
-                      <img class="remove-x" alt="Icon" src="{{ 'icon-x.svg' | asset_url }}" width="100" height="200" loading="lazy"/>
+                      <img class="remove-x" alt="Icon" src="{{ 'icon-x.svg' | asset_url }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy"/>
                     </a>
                   </td>
                 </tr>
