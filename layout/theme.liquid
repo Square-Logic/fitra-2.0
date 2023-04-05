@@ -35,7 +35,7 @@
 {% endif %}
 
 {% if template != 'cart' and template != 'index' %}
-  {% render 'error-404' %}
+  {% include 'error-404' %}
 {% endif %}
 
   <main role="main" {% if template != 'cart' and template != 'index' %}style="display: none;"{% endif %}>
