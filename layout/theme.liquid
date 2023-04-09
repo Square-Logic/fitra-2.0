@@ -11,7 +11,15 @@
   <script src="{{ 'jquery.slim.min.js' | asset_url }}" defer></script>
   <script src="{{ 'application.js' | asset_url }}" defer></script>  
   {{ content_for_header }} <!-- Header hook for plugins -->
-  {% render 'css-fonts' %}
+  <style>
+    {{ settings.body_font | font_face }}
+
+    :root {
+      --bodyFont: {{ settings.body_font.family }};
+      --bodyFontWeight: {{ settings.body_font.weight }};
+    }
+  </style>
+
   {{ 'application.css' | asset_url | stylesheet_tag }}
 
 </head>
