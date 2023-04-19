@@ -3,7 +3,11 @@
 <div id="page-404">
 
   <div class="sticky-side-image">
-    <img src="{{ mainProduct.images.first | image_url: width: 1440 }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" />
+    <img
+      src="{{ mainProduct.images.first | image_url: width: 1440 }}"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      loading="lazy" />
   </div>
 
   <div id="content-404" class="main-content grid">
@@ -13,15 +17,15 @@
         <br>
         <a href="/">{{ 'general.404.back' | t }}</a>
       </p>
-    </div>  
+    </div>
   </div>
-  
+
 </div>
 
 
 {% schema %}
-{
-  "name": " 404 Template",
-  "settings": []
-}
+  {
+    "name": " 404 Template",
+    "settings": []
+  }
 {% endschema %}
