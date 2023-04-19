@@ -45,7 +45,7 @@
 {% endif %}
 
 {% if template != 'cart' and template != 'index' %}
-  {% render 'error-404' %}
+  {% section '404-template' %}
 {% endif %}
 
   <main role="main" {% if template != 'cart' and template != 'index' %}style="display: none;"{% endif %}>
